@@ -2,14 +2,12 @@
 library(shiny)
 library(dplyr)
 library(ggplot2)
-library(ggrepel)
 library(maptools)
 library(rgdal)
 library(ggmap)
 library(data.table)
 library(shinythemes)
 library(ggiraph)
-library(grid)
 
 # Color scheme
 my_blue <- "dodgerblue2"
