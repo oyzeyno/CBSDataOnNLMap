@@ -251,7 +251,10 @@ server <- function(input, output, session) {
             axis.text.y = element_blank(),
             axis.line = element_blank(),
             axis.ticks = element_blank(),
-            legend.position = "none") +
+            legend.position = "none",
+            panel.grid.major = element_blank(), 
+            panel.grid.minor = element_blank(),
+            panel.background = element_blank()) +
       ggtitle(paste(input$factor_name,"-",input$value_name,"percentage by year for",input$province_name)) + ylim(0,100)
     
     output$yearly_demographics <- renderPlot({my_barplot})
